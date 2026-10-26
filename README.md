@@ -19,6 +19,10 @@ Moonrise 4:31 PM · Moonset 6:20 AM · ⚠️ bright moon
 -# Avg cloud cover: 🟢 <25% 🟡 <50% 🟠 <75% · Forecast via WeatherAPI
 ```
 
+## Why I built this
+
+I wanted hands-on practice working with weather data, which is a big part of power plant development: siting, resource assessment, and planning around conditions all start with it. Pulling forecasts from an API, caching them, and turning hourly data into a decision was a good small-scale version of that work. My daughter is also getting into astronomy, so it's handy to know when a clear, dark night is coming.
+
 ## How it works
 
 1. **Fetch:** request an hourly forecast (3 days by default). Responses are cached on disk for an hour, keyed by location and request parameters, so repeated lookups don't spend API quota.
